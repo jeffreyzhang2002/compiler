@@ -1,0 +1,2 @@
+byte a = 6;
+byte[] b = [a, a];

@@ -1,0 +1,10 @@
+^D:\SOURCE\FIRLANG\SRC\LEXER\CMAKELISTS.TXT
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SD:/source/FirLang -BD:/source/FirLang/build/debug --check-stamp-file D:/source/FirLang/build/debug/src/lexer/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

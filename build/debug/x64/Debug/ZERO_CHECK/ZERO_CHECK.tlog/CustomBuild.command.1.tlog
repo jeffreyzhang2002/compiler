@@ -1,0 +1,10 @@
+^D:\SOURCE\FIRLANG\BUILD\DEBUG\CMAKEFILES\329D464BAE2695B4D4FFBF8E3257D723\GENERATE.STAMP.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SD:/source/FirLang -BD:/source/FirLang/build/debug --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file D:/source/FirLang/build/debug/FirLang.sln
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
